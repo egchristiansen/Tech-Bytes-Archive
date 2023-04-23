@@ -1,0 +1,1545 @@
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-CA" >
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <!-- This is Squarespace. --><!-- tech-bytes -->
+<!--<base href="">-->
+<meta charset="utf-8" />
+<title>RISCy business: The future of x86 &mdash; Tech Bytes - Articles - Tech Bytes</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1484706267126-ZX2JR01SXW7JPDC2EIUQ/favicon.ico?format=100w"/>
+<link rel="canonical" href="riscy-business-the-future-of-x86.html"/>
+<meta property="og:site_name" content="Tech Bytes"/>
+<meta property="og:title" content="RISCy business: The future of x86 &mdash; Tech Bytes - Articles - Tech Bytes"/>
+<meta property="og:latitude" content="51.04473309999999"/>
+<meta property="og:longitude" content="-114.0718831"/>
+<meta property="og:locality" content="Calgary"/>
+<meta property="og:country-name" content="Canada"/>
+<meta property="og:url" content="https://tech-bytes.net/posts/2020/8/16/riscy-business-the-future-of-x86"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Now that Apple is abandoning Intel for its own in-house AppleSilicon chips, what is the future of Intel and x86? The computing standard won’t disappear overnight, but its days as the dominant desktop player are numbered."/>
+<meta property="og:image" content="http://static1.squarespace.com/static/515bbea4e4b0daad6e748f7e/518fb328e4b0cf61a01286e0/5f39d2b857da8940e9dbf6bb/1658340848957/processor-4347273_1920.jpg?format=1500w"/>
+<meta property="og:image:width" content="1500"/>
+<meta property="og:image:height" content="1000"/>
+<meta itemprop="name" content="RISCy business: The future of x86 — Tech Bytes - Articles - Tech Bytes"/>
+<meta itemprop="url" content="https://tech-bytes.net/posts/2020/8/16/riscy-business-the-future-of-x86"/>
+<meta itemprop="description" content="Now that Apple is abandoning Intel for its own in-house AppleSilicon chips, what is the future of Intel and x86? The computing standard won’t disappear overnight, but its days as the dominant desktop player are numbered."/>
+<meta itemprop="thumbnailUrl" content="http://static1.squarespace.com/static/515bbea4e4b0daad6e748f7e/518fb328e4b0cf61a01286e0/5f39d2b857da8940e9dbf6bb/1658340848957/processor-4347273_1920.jpg?format=1500w"/>
+<link rel="image_src" href="http://static1.squarespace.com/static/515bbea4e4b0daad6e748f7e/518fb328e4b0cf61a01286e0/5f39d2b857da8940e9dbf6bb/1658340848957/processor-4347273_1920.jpg?format=1500w" />
+<meta itemprop="image" content="http://static1.squarespace.com/static/515bbea4e4b0daad6e748f7e/518fb328e4b0cf61a01286e0/5f39d2b857da8940e9dbf6bb/1658340848957/processor-4347273_1920.jpg?format=1500w"/>
+<meta itemprop="author" content="Erik Christiansen"/>
+<meta itemprop="datePublished" content="2020-08-16T20:07:09-0600"/>
+<meta itemprop="dateModified" content="2022-07-20T12:14:08-0600"/>
+<meta itemprop="headline" content="RISCy business: The future of x86"/>
+<meta itemprop="publisher" content="Tech Bytes"/>
+<meta name="twitter:title" content="RISCy business: The future of x86 — Tech Bytes - Articles - Tech Bytes"/>
+<meta name="twitter:image" content="http://static1.squarespace.com/static/515bbea4e4b0daad6e748f7e/518fb328e4b0cf61a01286e0/5f39d2b857da8940e9dbf6bb/1658340848957/processor-4347273_1920.jpg?format=1500w"/>
+<meta name="twitter:url" content="https://tech-bytes.net/posts/2020/8/16/riscy-business-the-future-of-x86"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="Now that Apple is abandoning Intel for its own in-house AppleSilicon chips, what is the future of Intel and x86? The computing standard won’t disappear overnight, but its days as the dominant desktop player are numbered."/>
+<meta name="description" content="Now that Apple is abandoning Intel for its own in-house AppleSilicon chips, 
+what is the future of Intel and x86? The computing standard won’t disappear 
+overnight, but its days as the dominant desktop player are numbered." />
+<link rel="preconnect" href="https://images.squarespace-cdn.com">
+<script type="text/javascript" src="https://use.typekit.net/ik/D2Krh_uVpwq_7OQ2SgMY-R5tM-zEjq-5AXyk6-0hpfXfezb2fFHN4UJLFRbh52jhWD9UFA4KZAIXZQsKwesyjAbhZQSX5ejaZsntMKG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdP37O1s8jh6lj18XZWw0SaBujW48Sagyjh90jhNlOeBRiA8XpWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0dcmXOeBDOcu8OeUzjhBC-eNDifUDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOYs8jh6lj18XZWw0dcmXOYs8jh6lj18XZWw0SaBujW48Sagyjh90jhNlOYiaikoyjamTiY8Djhy8ZYmC-Ao1OcFzdPUaiaS0jAFu-WsoShFGZAsude80Zko0ZWbCiaiaOcBDOcu8OYiaikoDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOYiaikoXZAFGOA4oiemDOco8ifUaiaS0iemR-fuKpWs8SkoDSWmyScmDSeBRZPoRdhXKfAZuiYmkjPu3ifG4fJZmIMMjMkMfH6qJyB9bMg6IJMJ7fbRKpsMMeMj6MKG4fJBmIMMjgkMfH6qJtaqbMg6bJMJ7fbKfmsMMegI6MTMgtxr8qbj.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700">
+<script type="text/javascript" crossorigin="anonymous" nomodule="nomodule" src="https://assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js"></script>
+<script type="text/javascript" crossorigin="anonymous" src="https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js"></script>
+<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-63b0e27d9bfcb49b0f05f-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_runtime');</script>
+<script crossorigin="anonymous" src="https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-63b0e27d9bfcb49b0f05f-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-5082e2dab696b020ac83a-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_moment_js_vendor');</script>
+<script crossorigin="anonymous" src="https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-5082e2dab696b020ac83a-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-c6a38111aec507149cb3d-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-cldr_resource_pack');</script>
+<script crossorigin="anonymous" src="https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-c6a38111aec507149cb3d-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fd2acc815706e38fcfdf0-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors_stable');</script>
+<script crossorigin="anonymous" src="https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fd2acc815706e38fcfdf0-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-1e40c2d559aaea1e42779-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors');</script>
+<script crossorigin="anonymous" src="https://assets.squarespace.com/universal/scripts-compressed/common-vendors-1e40c2d559aaea1e42779-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-eafaea618b76bf9d37e6b-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
+<script crossorigin="anonymous" src="https://assets.squarespace.com/universal/scripts-compressed/common-eafaea618b76bf9d37e6b-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/performance-2b31864e00dd18f9fadd4-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-performance');</script>
+<script crossorigin="anonymous" src="https://assets.squarespace.com/universal/scripts-compressed/performance-2b31864e00dd18f9fadd4-min.en-US.js" defer ></script><script data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = {"facebookAppId":"314192535267336","facebookApiVersion":"v6.0","rollups":{"squarespace-announcement-bar":{"js":"//assets.squarespace.com/universal/scripts-compressed/announcement-bar-cb695e8fcdda99d566e70-min.en-US.js"},"squarespace-audio-player":{"css":"//assets.squarespace.com/universal/styles-compressed/audio-player-702bf18174efe0acaa8ce-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/audio-player-92a74b63f41c877516000-min.en-US.js"},"squarespace-blog-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/blog-collection-list-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/blog-collection-list-a9d6e2a5fc511c5f6dd74-min.en-US.js"},"squarespace-calendar-block-renderer":{"css":"//assets.squarespace.com/universal/styles-compressed/calendar-block-renderer-49c4a5f3dae67a728e3f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/calendar-block-renderer-28c88ab0445617e01f9fe-min.en-US.js"},"squarespace-chartjs-helpers":{"css":"//assets.squarespace.com/universal/styles-compressed/chartjs-helpers-53c004ac7d4bde1c92e38-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/chartjs-helpers-855288b6ff1fbff7fef0e-min.en-US.js"},"squarespace-comments":{"css":"//assets.squarespace.com/universal/styles-compressed/comments-91e23fb14e407e3111565-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/comments-671e5cd79b38249b9c95b-min.en-US.js"},"squarespace-dialog":{"css":"//assets.squarespace.com/universal/styles-compressed/dialog-89b254b5c87045b9e1360-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/dialog-22e200609dfba2d57f7c8-min.en-US.js"},"squarespace-events-collection":{"css":"//assets.squarespace.com/universal/styles-compressed/events-collection-49c4a5f3dae67a728e3f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/events-collection-99232a56d608b29bd4ce4-min.en-US.js"},"squarespace-form-rendering-utils":{"js":"//assets.squarespace.com/universal/scripts-compressed/form-rendering-utils-f4829be68ffaae0e7e0b8-min.en-US.js"},"squarespace-forms":{"css":"//assets.squarespace.com/universal/styles-compressed/forms-4a16a8a8c965386db2173-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/forms-3af65f4315985f0820ee7-min.en-US.js"},"squarespace-gallery-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/gallery-collection-list-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-df911470e9b09f49f1e70-min.en-US.js"},"squarespace-image-zoom":{"css":"//assets.squarespace.com/universal/styles-compressed/image-zoom-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/image-zoom-f7b2e999121148be21967-min.en-US.js"},"squarespace-pinterest":{"css":"//assets.squarespace.com/universal/styles-compressed/pinterest-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/pinterest-77c3b273dc24ffd4d146d-min.en-US.js"},"squarespace-popup-overlay":{"css":"//assets.squarespace.com/universal/styles-compressed/popup-overlay-948192219c3257f767ec5-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/popup-overlay-591eceaccff8ad0e1d084-min.en-US.js"},"squarespace-product-quick-view":{"css":"//assets.squarespace.com/universal/styles-compressed/product-quick-view-4a16a8a8c965386db2173-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/product-quick-view-49ba3c39edf456beb825c-min.en-US.js"},"squarespace-products-collection-item-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-item-v2-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-item-v2-633a22d4fd39679a82764-min.en-US.js"},"squarespace-products-collection-list-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-list-v2-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-list-v2-638e733cac57cc09e00a5-min.en-US.js"},"squarespace-search-page":{"css":"//assets.squarespace.com/universal/styles-compressed/search-page-9d0a55de1efafbb9218e1-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/search-page-e4e9a35a9641fff50d379-min.en-US.js"},"squarespace-search-preview":{"js":"//assets.squarespace.com/universal/scripts-compressed/search-preview-a84b73932d3d06285edb3-min.en-US.js"},"squarespace-simple-liking":{"css":"//assets.squarespace.com/universal/styles-compressed/simple-liking-ef94529873378652e6e86-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/simple-liking-edc0e09f99c7b0e2b2b17-min.en-US.js"},"squarespace-social-buttons":{"css":"//assets.squarespace.com/universal/styles-compressed/social-buttons-1f18e025ea682ade6293a-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/social-buttons-7f2a3f5ba9d7457e19891-min.en-US.js"},"squarespace-tourdates":{"css":"//assets.squarespace.com/universal/styles-compressed/tourdates-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/tourdates-9d98f6310cfc334a6ed61-min.en-US.js"},"squarespace-website-overlays-manager":{"css":"//assets.squarespace.com/universal/styles-compressed/website-overlays-manager-7cecc648f858e6f692130-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/website-overlays-manager-00f0979814fcd78f88466-min.en-US.js"}},"pageType":50,"website":{"id":"515bbea4e4b0daad6e748f7e","identifier":"tech-bytes","websiteType":1,"contentModifiedOn":1668131060896,"cloneable":false,"hasBeenCloneable":false,"siteStatus":{},"language":"en-CA","timeZone":"America/Edmonton","machineTimeZoneOffset":-25200000,"timeZoneOffset":-25200000,"timeZoneAbbr":"MST","siteTitle":"Tech Bytes","fullSiteTitle":"RISCy business: The future of x86 \u2014 Tech Bytes - Articles - Tech Bytes","siteTagLine":"","siteDescription":"<p>Tech-Bytes is a technology news site that covers industry trends in the mobile computing space.&nbsp;</p><p>\u00A0</p>","location":{"mapZoom":10.0,"mapLat":53.58150114116666,"mapLng":-113.49779315507811,"markerLat":53.544389,"markerLng":-113.49092669999999,"addressTitle":"","addressLine1":"","addressLine2":"","addressCountry":""},"logoImageId":"62296f11031135649d4c1d9d","socialLogoImageId":"587ed1e4893fc0950efe29bb","shareButtonOptions":{"5":true,"2":true,"1":true,"8":true,"3":true,"6":true,"7":true,"4":true},"logoImageUrl":"//images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/8ea6c62b-e0fa-4b55-a10c-3fd9dfc8cf2d/Tech-Bytes-logo_No-name_2021_10_29_horizontal-cropped.png","socialLogoImageUrl":"//images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1484706276186-TTBVZ7LXDX5663Z1DCKE/tech-bytes_logo_badge.png","authenticUrl":"https://tech-bytes.net","internalUrl":"https://tech-bytes.squarespace.com","baseUrl":"https://tech-bytes.net","primaryDomain":"tech-bytes.net","sslSetting":3,"isHstsEnabled":false,"socialAccounts":[{"serviceId":32,"screenname":"Medium","addedOn":1484689219922,"profileUrl":"https://egchristiansen.medium.com","iconEnabled":true,"serviceName":"medium"},{"serviceId":62,"screenname":"Twitter","addedOn":1635186375410,"profileUrl":"https://twitter.com/techbytesweb","iconEnabled":true,"serviceName":"twitter-unauth"}],"typekitId":"","statsMigrated":true,"imageMetadataProcessingEnabled":false,"screenshotId":"bf128f00c603296e6ed132871590a96bb0c47fd377469302885ab0f831e4cf26","captchaSettings":{"siteKey":"6LeCQQobAAAAAB84FjYe4gNc0mysRJSBmsAKF00F","enabledForDonations":false},"showOwnerLogin":false},"websiteSettings":{"id":"515bbea4e4b0daad6e748f7f","websiteId":"515bbea4e4b0daad6e748f7e","type":"Non-Profit","subjects":[{"systemSubject":"other","otherSubject":"Media/News/Magazine"}],"country":"CA","state":"","simpleLikingEnabled":true,"mobileInfoBarSettings":{"style":1,"isContactEmailEnabled":false,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"announcementBarSettings":{"style":1,"text":"<p>Closed&nbsp;</p>"},"commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":20,"commentFlagsAllowed":true,"commentEnableByDefault":true,"commentDisableAfterDaysDefault":0,"disqusShortname":"","commentsEnabled":true,"contactPhoneNumber":"","storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"expressCheckout":false,"continueShoppingLinkUrl":"/","useLightCart":false,"showNoteField":false,"shippingCountryDefaultValue":"US","billToShippingDefaultValue":false,"showShippingPhoneNumber":true,"isShippingPhoneRequired":false,"showBillingPhoneNumber":true,"isBillingPhoneRequired":false,"currenciesSupported":["CHF","HKD","MXN","EUR","DKK","USD","CAD","MYR","NOK","THB","AUD","SGD","ILS","PLN","GBP","CZK","SEK","NZD","PHP","RUB"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":1,"showCustomCheckoutForm":false,"checkoutPageMarketingOptInEnabled":false,"enableMailingListOptInByDefault":true,"sameAsRetailLocation":false,"merchandisingSettings":{"scarcityEnabledOnProductItems":false,"scarcityEnabledOnProductBlocks":false,"scarcityMessageType":"DEFAULT_SCARCITY_MESSAGE","scarcityThreshold":10,"multipleQuantityAllowedForServices":true,"restockNotificationsEnabled":false,"restockNotificationsMailingListSignUpEnabled":false,"relatedProductsEnabled":false,"relatedProductsOrdering":"random","soldOutVariantsDropdownDisabled":false,"productComposerOptedIn":false,"productComposerABTestOptedOut":false,"productReviewsEnabled":false,"displayImportedProductReviewsEnabled":false,"hasOptedToCollectNativeReviews":false},"isLive":false,"multipleQuantityAllowedForServices":true},"useEscapeKeyToLogin":true,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled","size":"small","shape":"rect"},"ampEnabled":false},"cookieSettings":{"isCookieBannerEnabled":false,"isRestrictiveCookiePolicyEnabled":false,"isRestrictiveCookiePolicyAbsolute":false,"cookieBannerText":"","cookieBannerTheme":"","cookieBannerVariant":"","cookieBannerPosition":"","cookieBannerCtaVariant":"","cookieBannerCtaText":"","cookieBannerAcceptType":"OPT_IN","cookieBannerOptOutCtaText":""},"websiteCloneable":false,"collection":{"title":"Posts","id":"518fb328e4b0cf61a01286e0","fullUrl":"/posts","type":1,"permissionType":1},"item":{"title":"RISCy business: The future of x86","id":"5f39d2b857da8940e9dbf6bb","fullUrl":"/posts/2020/8/16/riscy-business-the-future-of-x86","publicCommentCount":0,"commentState":1,"recordType":1},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":true,"tweakJSON":{"TGutter":"3%","TMaxWidth":"400","TPerRow":"3","gallery-auto-play":"false","galleryPlaySpeed":"3","hide-thumbnail-titles":"false","outerPadding":"10px","pagePadding":"10px","product-gallery-auto-crop":"false","product-image-auto-crop":"true","thumbnail-layout":"Basic Grid","topPadding":"10px","tweak-v1-related-products-title-spacing":"50px"},"templateId":"4fd11f32c4aad9b01c9e624c","templateVersion":"7","pageFeatures":[1,2,4],"gmRenderKey":"QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4","templateScriptsRootUrl":"https://static1.squarespace.com/static/ta/4fd1028ee4b02be53c65dfb3/1359/scripts/","betaFeatureFlags":["commerce_etsy_product_import","campaigns_content_editing_survey","commerce_order_status_access","campaigns_discount_section_in_automations","crm_remove_subscriber","use_customer_account_events","commerce_etsy_shipping_import","campaigns_global_uc_ab","fluid_engine_filtered_catalog_endpoints","campaigns_thumbnail_layout","campaigns_discount_section_in_blasts","block_annotations_revamp","campaigns_new_subscriber_search","campaigns_new_image_layout_picker","crm_default_newsletter_block_to_campaigns","asset_uploader_refactor","fluid_engine","campaigns_show_featured_templates","nested_categories_migration_enabled","campaigns_import_discounts","background_art_onboarding","member_areas_provisioning_service","member_areas_spanish_interviews","campaigns_asset_picker","member_areas_schedule_interview","product_composer_feedback_form_on_save","marketing_landing_page","fluid_engine_clean_up_grid_contextual_change","commerce_site_visitor_metrics","customer_accounts_email_verification","commerce_restock_notifications","viewer-role-contributor-invites","is_feature_gate_refresh_enabled","send_local_pickup_ready_email","commerce_clearpay","customer_account_creation_recaptcha","campaigns_seasonal_inventory_page_banner","crm_retention_segment"],"videoAssetsFeatureFlags":["mux-data-video-collection"],"impersonatedSession":false,"tzData":{"zones":[[-420,"Canada","M%sT",null]],"rules":{"Canada":[[1974,2006,null,"Oct","lastSun","2:00","0","S"],[1987,2006,null,"Apr","Sun>=1","2:00","1:00","D"],[2007,"max",null,"Mar","Sun>=8","2:00","1:00","D"],[2007,"max",null,"Nov","Sun>=1","2:00","0","S"]]}},"showAnnouncementBar":false,"recaptchaEnterpriseContext":{"recaptchaEnterpriseSiteKey":"6LdDFQwjAAAAAPigEvvPgEVbb7QBm-TkVJdDTlAv"}};</script><script>SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script>
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://feeds.feedburner.com/tech-bytes/articles" />
+<script type="application/ld+json">{"url":"https://tech-bytes.net","name":"Tech Bytes","description":"<p>Tech-Bytes is a technology news site that covers industry trends in the mobile computing space.&nbsp;</p><p>\u00A0</p>","image":"//images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/8ea6c62b-e0fa-4b55-a10c-3fd9dfc8cf2d/Tech-Bytes-logo_No-name_2021_10_29_horizontal-cropped.png","@context":"http://schema.org","@type":"WebSite"}</script><script type="application/ld+json">{"legalName":"","address":"","email":"techbytes.newsletter@gmail.com","telephone":"","sameAs":["https://egchristiansen.medium.com","https://twitter.com/techbytesweb"],"@context":"http://schema.org","@type":"Organization"}</script><script type="application/ld+json">{"address":"","image":"https://static1.squarespace.com/static/515bbea4e4b0daad6e748f7e/t/62296f11031135649d4c1d9d/1668131060896/","name":"","@context":"http://schema.org","@type":"LocalBusiness"}</script><script type="application/ld+json">{"name":"RISCy business: The future of x86 \u2014 Tech Bytes - Articles - Tech Bytes","url":"https://tech-bytes.net/posts/2020/8/16/riscy-business-the-future-of-x86","datePublished":"2020-08-16T20:07:09-0600","dateModified":"2022-07-20T12:14:08-0600","headline":"RISCy business: The future of x86","author":"Erik Christiansen","publisher":{"name":"Tech Bytes","logo":{"@type":"ImageObject","url":"https://static1.squarespace.com/static/515bbea4e4b0daad6e748f7e/t/62296f11031135649d4c1d9d/1668131060896/"},"@context":"http://schema.org","@type":"Organization"},"image":"http://static1.squarespace.com/static/515bbea4e4b0daad6e748f7e/518fb328e4b0cf61a01286e0/5f39d2b857da8940e9dbf6bb/1658340848957/processor-4347273_1920.jpg?format=1500w","@context":"http://schema.org","@type":"Article"}</script><link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/sitecss/515bbea4e4b0daad6e748f7e/1521/4fd11f32c4aad9b01c9e624c/581e1aa79f7456e5fe2bd064/1359/site.css"/><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2678491502237470"
+     crossorigin="anonymous"></script><script>Static.COOKIE_BANNER_CAPABLE = true;</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=$GA_TRACKING_ID$"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZjQwMz', true);gtag('config', 'UA-141620452-1');</script><!-- End of Squarespace Headers -->
+</head>
+
+<body class="blog-sidebar-display-hidden index-thumb-title-position-below index-item-layout-auto thumbnail-layout-basic-grid thumbnails-on-open-page-show-all   layout-style-center page-borders-none  gallery-page-controls-tiny-thumbnails  social-icon-style-round tweak-template-social-icon-standard-color hide-social-icons show-category-navigation   event-show-past-events event-thumbnails event-thumbnail-size-32-standard event-date-label  event-list-show-cats event-list-date event-list-time event-list-address   event-icalgcal-links  event-excerpts  event-item-back-link    product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square  show-product-price show-product-item-nav product-social-sharing tweak-v1-related-products-image-aspect-ratio-11-square tweak-v1-related-products-details-alignment-center newsletter-style-custom hide-opentable-icons opentable-style-dark small-button-style-raised small-button-shape-rounded medium-button-style-raised medium-button-shape-rounded large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-raised button-corner-style-rounded tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd view-item collection-type-blog collection-518fb328e4b0cf61a01286e0 collection-layout-default mobile-style-available logo-image has-primary-nav" id="item-5f39d2b857da8940e9dbf6bb">
+
+  <div id="canvas">
+
+      
+  <div id="mobileNav" class="">
+    <div id="mobileNavWrapper" class="wrapper">
+      <nav class="main-nav mobileNav">
+        <ul>
+          
+
+            
+              <li class="page-collection">
+                
+                  <a href="../../../../about.html">About</a>
+                
+                
+              </li>
+            
+
+          
+
+            
+              <li class="blog-collection active-link">
+                
+                  <a href="../../../../posts.html">Posts</a>
+                
+                
+              </li>
+            
+
+          
+
+            
+              <li class="page-collection">
+                
+                  <a href="../../../../archive.html">Archive</a>
+                
+                
+              </li>
+            
+
+          
+
+            
+              <li class=" external-link">
+                
+                
+                  <a href="https://tech-bytes.us12.list-manage.com/subscribe?id=0c6d3d3501&amp;u=7448a0492888a07091f3d4083">Subscribe</a>
+                
+              </li>
+            
+
+          
+
+            
+              <li class="page-collection">
+                
+                  <a href="../../../../guides.html">Guides</a>
+                
+                
+              </li>
+            
+
+          
+
+            
+              <input type="checkbox" name="mobile-folder-toggle-5e97500563a8503798e6f87e" id="mobile-folder-toggle-5e97500563a8503798e6f87e" class="folder-toggle-box hidden" />
+              <label for="mobile-folder-toggle-5e97500563a8503798e6f87e" class="folder-toggle-label" >Topics</label>
+              <div class="subnav">
+                <ul>
+                
+                  <li class="page-collection">
+                    
+                      <a href="../../../../mobile.html">Mobile</a>
+                    
+                    
+                  </li>
+                
+                  <li class="page-collection">
+                    
+                      <a href="../../../../computing.html">Computing</a>
+                    
+                    
+                  </li>
+                
+                  <li class="page-collection">
+                    
+                      <a href="../../../../user-experience.html">UX</a>
+                    
+                    
+                  </li>
+                
+                  <li class="page-collection">
+                    
+                      <a href="../../../../gaming.html">Gaming</a>
+                    
+                    
+                  </li>
+                
+                  <li class="page-collection">
+                    
+                      <a href="../../../../privacy.html">Privacy</a>
+                    
+                    
+                  </li>
+                
+                  <li class="page-collection">
+                    
+                      <a href="../../../../apple.html">Apple</a>
+                    
+                    
+                  </li>
+                
+                  <li class="page-collection">
+                    
+                      <a href="../../../../google.html">Google</a>
+                    
+                    
+                  </li>
+                
+                  <li class="page-collection">
+                    
+                      <a href="../../../../microsoft.html">Microsoft</a>
+                    
+                    
+                  </li>
+                
+                  <li class="page-collection">
+                    
+                      <a href="../../../../reviews.html">Reviews</a>
+                    
+                    
+                  </li>
+                
+                </ul>
+              </div>
+            
+
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div id="mobileMenuLink"><a>Menu</a></div>
+
+
+
+    <header id="header">
+      <div id="logo" data-content-field="site-title">
+        
+        <h1 class="logo"><a href="../../../../index.html"><img src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/8ea6c62b-e0fa-4b55-a10c-3fd9dfc8cf2d/Tech-Bytes-logo_No-name_2021_10_29_horizontal-cropped.png?format=1000w" alt="Tech Bytes" /></a></h1>
+        
+        
+      </div>
+      <script type="module">
+        Y.use('squarespace-ui-base', function(Y) {
+          Y.all("#header .logo, #header .logo-subtitle").each(function (text) {
+            text.plug(Y.Squarespace.TextShrink, {
+              parentEl: Y.one('#header'),
+              triggerWidth: 750
+            });
+          });
+        });
+
+        // Show spinner on page load if loading bookmarked url
+        if (window.location.hash && window.location.hash !== '#') {
+          document.querySelector('body').className += ' index-loading';
+        }
+      </script>
+      <div id="topNav" data-content-field="navigation">
+<nav class="main-nav">
+  <ul>
+  
+  
+
+      <li class="page-collection">
+
+        
+
+          
+            <a href="../../../../about.html">About</a>
+          
+
+          
+
+
+        
+
+      </li>
+
+  
+
+      <li class="blog-collection active-link">
+
+        
+
+          
+            <a href="../../../../posts.html">Posts</a>
+          
+
+          
+
+
+        
+
+      </li>
+
+  
+
+      <li class="page-collection">
+
+        
+
+          
+            <a href="../../../../archive.html">Archive</a>
+          
+
+          
+
+
+        
+
+      </li>
+
+  
+
+      <li class="">
+
+        
+
+          
+
+          
+            <a href="https://tech-bytes.us12.list-manage.com/subscribe?id=0c6d3d3501&amp;u=7448a0492888a07091f3d4083">Subscribe</a>
+          
+
+
+        
+
+      </li>
+
+  
+
+      <li class="page-collection">
+
+        
+
+          
+            <a href="../../../../guides.html">Guides</a>
+          
+
+          
+
+
+        
+
+      </li>
+
+  
+
+      <li class="folder-collection">
+
+        
+          
+          <a onclick="">Topics</a>
+          <div class="subnav">
+            <ul>
+              
+                
+                  <li class="page-collection">
+                    <a href="../../../../mobile.html">Mobile</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="page-collection">
+                    <a href="../../../../computing.html">Computing</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="page-collection">
+                    <a href="../../../../user-experience.html">UX</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="page-collection">
+                    <a href="../../../../gaming.html">Gaming</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="page-collection">
+                    <a href="../../../../privacy.html">Privacy</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="page-collection">
+                    <a href="../../../../apple.html">Apple</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="page-collection">
+                    <a href="../../../../google.html">Google</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="page-collection">
+                    <a href="../../../../microsoft.html">Microsoft</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="page-collection">
+                    <a href="../../../../reviews.html">Reviews</a>
+                  </li>
+                
+                
+              
+            </ul>
+          </div>
+
+        
+
+      </li>
+
+  
+  
+  
+  </ul>
+</nav>
+</div>
+
+    </header>
+
+    <div class="page-divider"></div>
+
+    <div class="extra-wrapper page-header">
+      <div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Header Content: Posts" data-type="block-field" data-updated-on="1646881423263" id="page-header-518fb328e4b0cf61a01286e0"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1646881373095_3192"><div class="sqs-block-content"><a href="https://www.patreon.com/bePatron?u=70797275" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></div></div></div></div></div>
+    </div>
+
+    <section id="page" role="main" data-content-field="main-content">
+      <!-- CATEGORY NAV -->
+      
+      <div class="article-wrapper">
+
+
+
+<article class="hentry promoted promoted-block-image category-article tag-arm tag-apple-silicon tag-x86 tag-intel tag-amd tag-apple tag-microsoft author-erik-christiansen post-type-text" id="article-5f39d2b857da8940e9dbf6bb" data-item-id="5f39d2b857da8940e9dbf6bb">
+
+  <!--SPECIAL CONTENT-->
+
+  
+    <div class="special-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Promoted Block" data-type="promoted-block" id="promoted-block-5f39d2b857da8940e9dbf6bb"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_1_1597628899181_13624"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:1920px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:66.66667175292969%;
+                
+                overflow: hidden;
+              "
+              >
+                
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628912232-FR35L7VJH295NN2TPYDM/Processor+inside+head+image" alt="CC image courtesy of Gerd Altmann from Pixabay" /></noscript><img class="thumb-image" data-src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628912232-FR35L7VJH295NN2TPYDM/Processor+inside+head+image" data-image="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628912232-FR35L7VJH295NN2TPYDM/Processor+inside+head+image" data-image-dimensions="1920x1280" data-image-focal-point="0.5,0.5" alt="CC image courtesy of Gerd Altmann from Pixabay" data-load="false" data-image-id="5f39e1edcedac41642213a04" data-type="image" />
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">CC image courtesy of <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4347273">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4347273">Pixabay</a></p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div></div></div></div></div>
+  
+
+
+  <!--POST HEADER-->
+
+  <header>
+		<h1 class="entry-title">
+      
+        <a href="riscy-business-the-future-of-x86.html" data-content-field="title">RISCy business: The future of x86</a>
+      
+    </h1>
+    <div class="meta">
+      <span class="date"><time class="published" datetime="2020-08-16">August 16, 2020</time></span>
+    </div>
+  </header>
+
+  <!--POST BODY-->
+
+
+  <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1597625048802" id="item-5f39d2b857da8940e9dbf6bb"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1597620390244_15507"><div class="sqs-block-content"><p><em>Part of the WWDC 2020 series</em></p>
+<p>By <a href="../../../../about.html">Erik Christtiansen</a></p>
+
+</div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1597630274232_42507"><div class="sqs-block-content"><hr /></div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1597630274232_42556"><div class="sqs-block-content"><p>Following the expected reveal that Apple was going to transition the Mac from Intel to Apple Silicon, I started thinking about what this would mean for the x86 architecture more broadly. This architecture has been at the heart of desktop computing for forty years, and I think it's unlikely that Apple's implementation of its own chips won't have wider implications on the computer industry. Based on my understanding of ARM - the architecture that Apple Silicon is loosely based on - I think it's likely that x86', and particularly and Intel's, days as the dominant desktop chip standard are numbered. </p>
+<h2 id="what-s-the-difference-">What's the difference?</h2>
+<p>First we have to understand what x86 and ARM are. (For the purposes of this article I will be referring to ARM as the 'standard' but I will cite Apple Silicon where appropriate).</p>
+<p>The x86 name can be attributed to a lineage of CPUs developed by Intel's Robert Noyce and Gordon Moore (yes, of Moore's Law) since 1968. The first processor by Intel was the 4004 which launched in 1970. However, the x86 moniker actually descended from the 8086 CPU - a 16 bit chip - that released in 1978. The x86-16 instruction set (as it was called at the time) was a "complex instruction set" or CISC. The instruction set architecture (ISA) is abstract model of how a computer works, and it encompasses the data types, memory management, registers and other <a href="../../../../about.html">fundamental features</a>. While Intel's processors have evolved massively since the 1970s, eventually becoming the i3, i5, i7 and i9 series we know today, the CISC instruction set has some shared characteristics across generations. In an effort to distance itself from the x86 name (which is meaningless to the public) Intel trademarked the term 'Pentium.' AMD, Intel's primary competitor in the desktop space and another maker of CISC/x86 CPUs, made a similar branding decision by coining the term 'Athlon' for its 64-bit chips in the early 2000s. </p>
+<p>The CISC instruction set is what really sets x86 apart from ARM, and it was developed in an era when computer memory was an expensive commodity. To more efficiently handle memory usage, the CISC model bundles instructions together. Multiple steps are included into the same instruction.</p>
+
+</div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1597625577788_34965"><div class="sqs-block-content"><hr /></div></div><div class="row sqs-row"><div class="col sqs-col-5 span-5"><div class="sqs-block image-block sqs-block-image" data-aspect-ratio="74.67532467532467" data-block-type="5" id="block-yui_3_17_2_1_1597626789774_17416"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:308px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:74.67532348632812%;
+                
+                overflow: hidden;
+              "
+              >
+                
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628417016-MTI8YKRFVJ1D85JXYKET/CISC+instructions" alt="Based off the videos by Gary Sims" /></noscript><img class="thumb-image" data-src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628417016-MTI8YKRFVJ1D85JXYKET/CISC+instructions" data-image="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628417016-MTI8YKRFVJ1D85JXYKET/CISC+instructions" data-image-dimensions="308x242" data-image-focal-point="0.5,0.5" alt="Based off the videos by Gary Sims" data-load="false" data-image-id="5f39e0001902447baae58e63" data-type="image" />
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">Based off the videos by <a href="https://www.youtube.com/channel/UCRjSO-juFtngAeJGJRMdIZw">Gary Sims</a></p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div></div><div class="col sqs-col-7 span-7"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_1_1597626789774_21602"><div class="sqs-block-content">&nbsp;</div></div></div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1597625577788_34152"><div class="sqs-block-content"><hr /></div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1597625577788_34200"><div class="sqs-block-content"><p>ARM chips are quite different from x86/CISC chips developed by Intel and AMD. The name 'ARM' actually stands for Acorn RISC Machine, an homage to Acorn Computers - based in the UK. Acorn and Apple first developed ARM in a 1990 joint venture. Unlike x86, ARM chips don't use the CISC instruction set. Instead, they are "reduced instruction set computers" - or RISC. What's the difference between CISC and RISC? A lot!</p>
+<p>The RISC instruction set was developed as a simpler alternative to CISC (hence its name). The famed computer scientist David Patterson <a href="https://people.eecs.berkeley.edu/~kubitron/courses/cs252-F00/handouts/papers/p216-patterson.pdf">said this about RISC</a>.</p>
+
+</div></div><div class="sqs-block quote-block sqs-block-quote null" data-block-type="31" id="block-yui_3_17_2_1_1597620390244_32783"><div class="sqs-block-content">
+
+
+
+<figure class="block-animation-none">
+  <blockquote data-animation-role="quote"
+  >
+    <span>&#147;</span>The simplicity of the instruction set and addressing modes allows most Instructions to execute in a single machine cycle, and the simplicity of each instruction guarantees a short cycle time. In addition, such a machine should have a much shorter design time<span>&#148;</span>
+  </blockquote>
+  <figcaption class="source">&mdash; David Patterson</figcaption>
+</figure>
+</div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1597620390244_32837"><div class="sqs-block-content"><p>As opposed to the CISC instruction set which bundles multiple instructions together, the RISC instruction set includes one instruction per cycle. So, a RISC CPU instruction would be broken into smaller bits.</p>
+</div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1597625577788_33378"><div class="sqs-block-content"><hr /></div></div><div class="row sqs-row"><div class="col sqs-col-5 span-5"><div class="sqs-block image-block sqs-block-image" data-aspect-ratio="103.87096774193549" data-block-type="5" id="block-yui_3_17_2_1_1597626789774_24754"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:310px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:103.87096405029297%;
+                
+                overflow: hidden;
+              "
+              >
+                
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628514409-TE589QH2RINOEI7KZ4SN/RISC+instructions" alt="Based off the videos by Gary Sims" /></noscript><img class="thumb-image" data-src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628514409-TE589QH2RINOEI7KZ4SN/RISC+instructions" data-image="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628514409-TE589QH2RINOEI7KZ4SN/RISC+instructions" data-image-dimensions="310x322" data-image-focal-point="0.5,0.5" alt="Based off the videos by Gary Sims" data-load="false" data-image-id="5f39e0606ced5e0ad47227f3" data-type="image" />
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">Based off the videos by <a href="https://www.youtube.com/channel/UCRjSO-juFtngAeJGJRMdIZw">Gary Sims</a></p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div></div><div class="col sqs-col-7 span-7"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_1_1597626789774_26930"><div class="sqs-block-content">&nbsp;</div></div></div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1597625577788_32525"><div class="sqs-block-content"><hr /></div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1597625577788_32573"><div class="sqs-block-content"><p>Each of the 'steps' (an arbitrary moniker for this example) is its own unique instruction. Instructions are not bundled together.</p><p>Because of this simplified instruction set, the instructions run once per cycle - with a 'cycle' being the frequency of the CPU. A CISC instruction set, with its bundle of steps, might run once every several cycles. Furthermore, RISC has a fixed memory size, unlike CISC, making it easier for the CPU to prioritize instructions. This fixed memory size, as far as I can tell, makes it easier for the CPU to 'predict' and 'plan' what tasks to do next.</p>
+</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_1_1597628899181_17511"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:478px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:50.83681869506836%;
+                
+                overflow: hidden;
+              "
+              >
+                
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597694523053-I9P0752QAAAAEUENWS2F/Screen+Shot+2020-08-17+at+2.01.44+PM.png" alt="Simplistic overview of CISC vs RISC" /></noscript><img class="thumb-image" data-src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597694523053-I9P0752QAAAAEUENWS2F/Screen+Shot+2020-08-17+at+2.01.44+PM.png" data-image="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597694523053-I9P0752QAAAAEUENWS2F/Screen+Shot+2020-08-17+at+2.01.44+PM.png" data-image-dimensions="478x243" data-image-focal-point="0.5,0.5" alt="Simplistic overview of CISC vs RISC" data-load="false" data-image-id="5f3ae23a065d3019cc19c0d8" data-type="image" />
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">Simplistic overview of CISC vs RISC</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1597628899181_17787"><div class="sqs-block-content"><p>This comparison is a bit of an oversimplification, as the x86 standard has evolved considerably during its long history. The Pentium Pro, Intel's sixth-generation x86 processor line introduced in 1995, changed how the CISC instructions were executed. Rather than grouping instructions together, Pentium Pro CPUs decoded the instructions and broke them down into smaller steps - similar to RISC.</p>
+
+</div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1597625577788_31536"><div class="sqs-block-content"><hr /></div></div><div class="row sqs-row"><div class="col sqs-col-6 span-6"><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_1_1597626789774_29716"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:544px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:129.0441131591797%;
+                
+                overflow: hidden;
+              "
+              >
+                
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628556587-4EEDIKJYP5AHLUB7SKVL/Pentium+Pro+CISC+instructions" alt="Based off the videos by Gary Sims" /></noscript><img class="thumb-image" data-src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628556587-4EEDIKJYP5AHLUB7SKVL/Pentium+Pro+CISC+instructions" data-image="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597628556587-4EEDIKJYP5AHLUB7SKVL/Pentium+Pro+CISC+instructions" data-image-dimensions="544x702" data-image-focal-point="0.5,0.5" alt="Based off the videos by Gary Sims" data-load="false" data-image-id="5f39e088de22531a4dacac04" data-type="image" />
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">Based off the videos by <a href="https://www.youtube.com/channel/UCRjSO-juFtngAeJGJRMdIZw">Gary Sims</a></p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div></div><div class="col sqs-col-6 span-6"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_1_1597626789774_35963"><div class="sqs-block-content">&nbsp;</div></div></div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1597625577788_30325"><div class="sqs-block-content"><hr /></div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1597625577788_30373"><div class="sqs-block-content"><p>So, modern day CISC mimics RISC - though it does so in a round about way. Unfortunately, that extra logic required to 'decode' the CISC instructions into smaller steps creates more heat from the CPU. Hot CPUs use more power and require more cooling. This would explain why Intel hasn't been able use the x86 standard to compete against ARM in the smartphone and tablet market. Think about the noisy fan you hear in your MacBook Pro. Now imagine holding a phone in your hands that's not only hot to touch but noisy as hell. I guess it would make for an interesting FaceTime chat.</p><h2 id="can-arm-scale-to-the-desktop-">Can ARM scale to the desktop?</h2><p>We can see that the instruction set is a major differentiator between x86 and ARM. Apple Silicon is <em>loosely</em> based on ARM, insofar that it uses a RISC instruction set. But, Apple Silicon also <em>heavily customized</em> - particularly in the graphics department. For a more detailed look into Apple's fancy-schmancy chips, I'd highly recommend a video by Rene Ritchie which explain <a href="https://www.youtube.com/watch?v=wgEKDGNjqsk">why Apple's chips are special</a> (and way better than its competition). For now, let's just say that Apple's chips aren't like a Raspberry Pi. Rene says the following about Apple Silicon.</p>
+</div></div><div class="sqs-block quote-block sqs-block-quote null" data-block-type="31" id="block-yui_3_17_2_1_1597626789774_39371"><div class="sqs-block-content">
+
+
+
+<figure class="block-animation-none">
+  <blockquote data-animation-role="quote"
+  >
+    <span>&#147;</span>They’re not just moving from x86 to ARM. That’s myopic. They’re moving from a hodgepodge of Intel CPUs, Intel and AMD GPUs and custom Apple T2 chips that they’ve been shipping for years just to work around he lack of features in those CPUs and GPUs.<span>&#148;</span>
+  </blockquote>
+  <figcaption class="source">&mdash; Rene Ritchie, YouTube</figcaption>
+</figure>
+</div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1597626789774_39422"><div class="sqs-block-content"><p>When looking at the instruction sets more closely, it undermines the argument that ARM chips are better for mobile devices and x86 chips are better for desktop computers. ARM chips <em>typically</em> are made for lower power devices, but they can scale up. Forget about 'ARM' for now. Think CISC vs RISC.</p>
+<p>Before Apple transitioned to Intel/x86, they were using PowerPC CPUs developed by IBM. Power PC is actually a RISC-based CPU. It's not x86. So chips that use the RISC instruction set can certainly be stuck into your laptop or desktop computer, and a prime example is Apple's famous G4 and G5 Power Mac desktops which were industry standard multimedia machines at the time. IBM's Watson supercomputer is based on a similar Power PC architecture. </p>
+
+</div></div><div class="row sqs-row"><div class="col sqs-col-6 span-6"><div class="sqs-block image-block sqs-block-image" data-aspect-ratio="118.07580174927115" data-block-type="5" id="block-yui_3_17_2_1_1597629396336_16086"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:600px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:118.07579803466797%;
+                
+                overflow: hidden;
+              "
+              >
+                
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597629432566-74HIPRDI4302J7X5WLEN/Mac+G4" alt="Image from Wikimedia" /></noscript><img class="thumb-image" data-src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597629432566-74HIPRDI4302J7X5WLEN/Mac+G4" data-image="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597629432566-74HIPRDI4302J7X5WLEN/Mac+G4" data-image-dimensions="600x600" data-image-focal-point="0.5,0.5" alt="Image from Wikimedia" data-load="false" data-image-id="5f39e3f8dcbb3342ecd07a15" data-type="image" />
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">Image from <a href="https://commons.wikimedia.org/wiki/File:Apple_PowerMac_G4_M8570_MDD_front.jpg">Wikimedia</a></p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div></div><div class="col sqs-col-6 span-6"><div class="sqs-block image-block sqs-block-image" data-aspect-ratio="117.78425655976676" data-block-type="5" id="block-yui_3_17_2_1_1597629396336_18903"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:450px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:117.78425598144531%;
+                
+                overflow: hidden;
+              "
+              >
+                
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597629443655-J1HQ39ZASA8X1TO2A84T/Mac+G5" alt="Image from Wikimedia" /></noscript><img class="thumb-image" data-src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597629443655-J1HQ39ZASA8X1TO2A84T/Mac+G5" data-image="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597629443655-J1HQ39ZASA8X1TO2A84T/Mac+G5" data-image-dimensions="450x600" data-image-focal-point="0.5,0.5" alt="Image from Wikimedia" data-load="false" data-image-id="5f39e4035ff12d023384a47c" data-type="image" />
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">Image from <a href="https://commons.wikimedia.org/wiki/File:Power_Mac_G5_hero_left.jpg">Wikimedia</a></p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div></div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1597629396336_16364"><div class="sqs-block-content"><p>It's also worth noting that much of the media refers to ARM as a relatively small player in the chip industry. I suppose it comes from a mental image that small companies make small chips for small devices (phones and tablets). This is a misnomer, and the opposite is closer to the truth. Desktops and laptops account for a <a href="https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet">smaller percentage</a> of all "computers" sold, if you include phones and tablets as computers - which I do. iPhones, Android devices, iPads, the iPod, the Apple Newton, the Nintendo 3DS/Switch and many other specialized computers use ARM processors. RISC is everywhere baby!</p>
+<p>If anything, it would appear that x86 has the biggest disadvantage because, so far, it has been incapable of scaling down. x86 is trapped in the traditional desktop/laptop market. Apple would never have transitioned to its own in-house chips if they couldn't rival Intel. It might take a two-year transition, but they will likely surpass Intel in both raw performance and power efficiency</p>
+<p>The Twitter user @never_released (current name 'Longhorn') recently published the following tweet</p>
+
+</div></div><div class="sqs-block embed-block sqs-block-embed" data-block-json="&#123;&quot;cache_age&quot;:&quot;3153600000&quot;,&quot;authorUrl&quot;:&quot;https://twitter.com/never_released&quot;,&quot;width&quot;:550,&quot;height&quot;:null,&quot;hSize&quot;:null,&quot;resolveObject&quot;:&quot;Tweet&quot;,&quot;html&quot;:&quot;&lt;blockquote class=\&quot;twitter-tweet\&quot;&gt;&lt;p dir=\&quot;ltr\&quot; lang=\&quot;en\&quot;&gt;At this point, I think that the first gen Apple Silicon machines will be faster at running x86 code than an actual x86...&lt;br&gt;&lt;br&gt;(Apple outright sidestepped the biggest issue involved to make such a JIT work w/ controlling the hardware, Microsoft is probably quite envious)&lt;/p&gt;\u2014 Longhorn (@never_released) &lt;a href=\&quot;https://twitter.com/never_released/status/1288658469827104769?ref_src=twsrc%5Etfw\&quot;&gt;July 30, 2020&lt;/a&gt;&lt;/blockquote&gt;\n&lt;script async=\&quot;\&quot; src=\&quot;https://platform.twitter.com/widgets.js\&quot; charset=\&quot;utf-8\&quot;&gt;&lt;/script&gt;&quot;,&quot;url&quot;:&quot;https://twitter.com/never_released/status/1288658469827104769&quot;,&quot;resolvedBy&quot;:&quot;twitter&quot;,&quot;floatDir&quot;:null,&quot;authorName&quot;:&quot;Longhorn&quot;,&quot;version&quot;:&quot;1.0&quot;,&quot;resolved&quot;:true,&quot;type&quot;:&quot;rich&quot;,&quot;providerName&quot;:&quot;Twitter&quot;,&quot;providerUrl&quot;:&quot;https://twitter.com&quot;&#125;" data-block-type="22" id="block-yui_3_17_2_1_1597625586536_21761"><div class="sqs-block-content"><blockquote class="twitter-tweet"><p dir="ltr" lang="en">At this point, I think that the first gen Apple Silicon machines will be faster at running x86 code than an actual x86...<br><br>(Apple outright sidestepped the biggest issue involved to make such a JIT work w/ controlling the hardware, Microsoft is probably quite envious)</p>— Longhorn (@never_released) <a href="https://twitter.com/never_released/status/1288658469827104769?ref_src=twsrc%5Etfw">July 30, 2020</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1597625586536_21815"><div class="sqs-block-content"><p>If correct, this kind of renders the argument invalid that ARM, or Apple's manifestation of it (Apple Silicon), cannot scale to match or surpass the x86 standard.</p>
+<h2 id="where-x86-might-continue-to-thrive">Where x86 'might' continue to thrive</h2>
+<p>So what's the broader significance of Apple Silicon? How will it impact the computer industry outside Apple's sphere of devices? </p>
+<p>I've talked to friends and colleagues who argue that Apple Silicon won't impact the Windows desktop computing market. I disagree. Windows x86 app performance on ARM chips (Qualcomm in particular) is <a href="https://www.techspot.com/review/1599-windows-on-arm-performance/page4.html">pretty abysmal</a>, and podcaster and tech journalist Paul Thurrott commended that a better name for Windows on ARM is probably <a href="https://twit.tv/shows/windows-weekly/episodes/680?autostart=false">Windows on Snapdragon</a> (35:45) - arguing that Windows can't just run any old ARM processor. But a reason for this might be A) Microsoft's lack of incentive to broaden Windows' compatibility on ARM and B) that Intel/AMD seems to be "good enough" so why bother?</p>
+<p>As I alluded to before, Apple is not moving to ARM exactly. Apple Silicon is highly customized and very difficult to replicate. Windows machines running stock ARM chips are modular computers that use off-the-shelf parts just like those Intel ones we have today. But, Apple moving to their own silicon will show that ARM/RISC chips can overtake x86 from both a performance and power consumption standpoint. I think the result will be surge in interest around getting Windows to run well on ARM, and subsequently the development of many more ARM-based Windows devices. People want better battery life from their laptops, and Windows uses might be enticed if Apple can deliver on this front. Where can Intel/x86 continue to thrive?</p>
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-aspect-ratio="87.77777777777777" data-block-type="5" id="block-yui_3_17_2_1_1597629396336_76757"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:1920px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:87.77777862548828%;
+                
+                overflow: hidden;
+              "
+              >
+                
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597629602539-1MPJCC1UAA82ETP6CBVO/Xbox+Series+X" alt="Upcoming gaming consoles like the Xbox Series X will still use the x86 architecture. CC image courtesy of Thor Deichmann from Pixabay." /></noscript><img class="thumb-image" data-src="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597629602539-1MPJCC1UAA82ETP6CBVO/Xbox+Series+X" data-image="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597629602539-1MPJCC1UAA82ETP6CBVO/Xbox+Series+X" data-image-dimensions="1920x1920" data-image-focal-point="0.5,0.5" alt="Upcoming gaming consoles like the Xbox Series X will still use the x86 architecture. CC image courtesy of Thor Deichmann from Pixabay." data-load="false" data-image-id="5f39e4a1792fdc7dc7ae6f33" data-type="image" />
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">Upcoming gaming consoles like the Xbox Series X will still use the x86 architecture. CC image courtesy of <a href="https://pixabay.com/users/Thor_Deichmann-2306827/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4965065">Thor Deichmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4965065">Pixabay</a>.</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1597629396336_77033"><div class="sqs-block-content"><p>For the time being, gaming seems like a logical place for Intel and AMD. Most of the Windows ARM devices can run 32 bit Intel apps, but not 64. I would suspect that gamers will likely move towards ARM support in the future, but how long that will take is anyone's best guess. Steam has kind of made x86 gaming 'the thing' and even the upcoming consoles, namely the Xbox Series X and Playstation 5, will be using AMD's newest x86 architecture under the hood.</p>
+<p>Ultimately, Intel is in the toughest spot. As I mentioned in a previous post, Intel has <a href="../../6/29/apple-silicon-what-it-means-for-the-mac-and-the-computer-industry.html">struggled</a> to get down to 10nm for its chip fabrication. AMD, which outsources its fabrication to Taiwanese company TSMC, is already approaching 5nm. </p>
+<p>And that leaves AMD. The company has been very successful in desktop CPUs with its Ryzen line of chips, as well as its family of relatively competitive graphics cards. But, AMD has had many ups and down throughout its history. Being the leader of potentially dying computer standard might have long-term implications.</p>
+<p>Ultimately, I think the Apple's move to Apple Silicon will lead the rest of the computer industry down a path we probably didn't expect. The Raspberry Pi 4 (particularly the 8gb version) can run Windows 10 decently, despite Windows not being well optimized for the platform. You can now build a Windows ten desktop computer for under $100. It's only a matter of time before Qualcomm, or another company, starts to produce stock ARM/RISC chips that are more suitable for Windows. Microsoft will probably be more incentivized to develop Windows on ARM if most devices are expected to support it. I don't think x86 will disappear overnight, but I see it being relegated to niche markets like high-power multimedia production and gaming rigs. Most people want good performance and good battery life, and computers optimized for ARM are more likely to give them those features.</p>
+
+</div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1597630274232_67581"><div class="sqs-block-content"><hr /></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1597630632187_42846"><div class="sqs-block-content">
+
+<p class="" style="white-space:pre-wrap;">(I want to give a big shout out to Gary Sims and his awesome <a href="https://www.youtube.com/channel/UCRjSO-juFtngAeJGJRMdIZw">YouTube channel</a>. Gary has some excellent videos about CPU instruction sets (CISC and RISC) and ARM vs x86. Without Gary, I wouldn’t have been able to write this article)</p>
+
+
+</div></div></div></div></div></div>
+  
+
+
+  <!--POST FOOTER-->
+
+  <footer>
+    <div class="meta">
+
+      
+
+      <div class="first meta-row">
+        <span class="categories"><span class="categories-title">In</span> <a href="../../../category/Article.html" rel="tag">Article</a></span>
+        <span class="tags"><span class="tags-title">Tags</span> <a href="../../../tag/ARM.html" rel="tag">ARM</a>, <a href="../../../tag/Apple+Silicon.html" rel="tag">Apple Silicon</a>, <a href="../../../tag/x86.html" rel="tag">x86</a>, <a href="../../../tag/Intel.html" rel="tag">Intel</a>, <a href="../../../tag/AMD.html" rel="tag">AMD</a>, <a href="../../../tag/Apple.html" rel="tag">Apple</a>, <a href="../../../tag/Microsoft.html" rel="tag">Microsoft</a></span>
+      </div>
+
+      <div class="second meta-row">
+        
+  <span class="sqs-simple-like" data-item-id="5f39d2b857da8940e9dbf6bb" data-like-count="2">
+    <span class="like-icon"></span>
+    <span class="like-count"></span>
+  </span>
+
+        <span class="squarespace-social-buttons inline-style" data-system-data-id="1597629817466-HDA4CFS0II7FCXZEL5RL" data-asset-url="https://images.squarespace-cdn.com/content/v1/515bbea4e4b0daad6e748f7e/1597629817466-HDA4CFS0II7FCXZEL5RL/processor-4347273_1920.jpg" data-record-type="1" data-full-url="/posts/2020/8/16/riscy-business-the-future-of-x86" data-title="RISCy business: The future of x86"></span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  </article>
+
+
+
+<!--PAGINATION-->
+
+
+  <nav class="pagination clear">
+      <a class="prev-item" href="../../9/8/accidental-reveal-xbox-series-s-confirmed.html">&larr; Accidental reveal: Xbox Series S confirmed</a><a class="next-item" href="../../7/17/os-cross-pollination-and-what-it-means-for-the-mac-and-ipad.html">OS cross-pollination and what it means for the Mac and iPad &rarr;</a>
+  </nav>
+
+
+
+  <!-- COMMENTS -->
+
+  <section id="comments-" class="comments-wrapper">
+    
+  <div class="squarespace-comments" id="comments-5f39d2b857da8940e9dbf6bb" data-item-id="5f39d2b857da8940e9dbf6bb" data-public-comment-count="0" data-comment-state="1"></div>
+
+  </section>
+
+</div>
+
+<aside id="sidebar"><div class="sqs-layout sqs-grid-1 columns-1 empty" data-layout-label="Blog Sidebar" data-type="block-field" data-updated-on="1586917273659" id="sidebarBlocks"><div class="row sqs-row"><div class="col sqs-col-1 span-1"></div></div></div></aside>
+    </section>
+
+    <div class="extra-wrapper page-footer">
+      <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="Footer Content: Posts" data-type="block-field" id="page-footer-518fb328e4b0cf61a01286e0"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+    </div>
+
+    <div class="page-divider"></div>
+
+    <footer id="footer">
+      <div class="sqs-layout sqs-grid-1 columns-1" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1635466983297" id="footerBlock"><div class="row sqs-row"><div class="col sqs-col-1 span-1"><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1635465700081_3539"><div class="sqs-block-content"><hr /></div></div></div></div><div class="row sqs-row"><div class="col sqs-col-1 span-1"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1621649587592_29481"><div class="sqs-block-content">
+
+<h3 style="text-align:center;white-space:pre-wrap;"><a href="https://tech-bytes.us12.list-manage.com/subscribe?id=0c6d3d3501&amp;u=7448a0492888a07091f3d4083">Newsletter</a> | <a href="https://tech-bytes.net/articles?format=rss">RSS Feed</a> | <a href="https://twitter.com/techbytesweb">Twitter</a> | <a href="https://egchristiansen.medium.com">Medium</a></h3>
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1635465700081_5490"><div class="sqs-block-content"><h3 style="text-align: center"> Tech Bytes is Copyright &copy; 2013-<script>document.write(new Date().getFullYear())</script> BY Erik Christiansen</h3></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1635465700081_8246"><div class="sqs-block-content">
+
+<h3 style="text-align:center;white-space:pre-wrap;">Powered by <a href="https://www.squarespace.com">Squarespace</a></h3>
+
+
+</div></div></div></div></div>
+      
+        
+        <div id="socialLinks" class="social-links sqs-svg-icon--list" data-content-field="connected-accounts">
+          
+
+
+  <a href="https://egchristiansen.medium.com" target="_blank" class="sqs-svg-icon--wrapper medium">
+    <div>
+      <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+        <use class="sqs-use--icon" xlink:href="#medium-icon"></use>
+        <use class="sqs-use--mask" xlink:href="#medium-mask"></use>
+      </svg>
+    </div>
+  </a>
+
+  <a href="https://twitter.com/techbytesweb" target="_blank" class="sqs-svg-icon--wrapper twitter-unauth">
+    <div>
+      <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+        <use class="sqs-use--icon" xlink:href="#twitter-unauth-icon"></use>
+        <use class="sqs-use--mask" xlink:href="#twitter-unauth-mask"></use>
+      </svg>
+    </div>
+  </a>
+
+
+        </div>
+        
+      
+    </footer>
+
+  </div>
+
+  <div></div>
+
+  <script src="https://static1.squarespace.com/static/ta/4fd1028ee4b02be53c65dfb3/1359/scripts/site-bundle.js" type="text/javascript"></script>
+
+  <script data-sqs-type="imageloader-bootstrapper">if(window.ImageLoader) window.ImageLoader.bootstrap({}, document);</script><script>Squarespace.afterBodyLoad(Y);</script><svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg"><symbol id="medium-icon" viewBox="0 0 64 64"><path d="M46.908,23.95c-0.006-0.005-0.011-0.01-0.018-0.014l-0.01-0.005l-9.05-4.525c-0.061-0.031-0.125-0.051-0.19-0.068c-0.082-0.021-0.165-0.034-0.249-0.034c-0.347,0-0.692,0.174-0.878,0.477l-5.21,8.467l6.538,10.625l9.095-14.779C46.966,24.046,46.952,23.985,46.908,23.95z M28.433,35.958L37,40.241L28.433,26.32V35.958zM38.287,40.884l7.052,3.526C46.256,44.869,47,44.548,47,43.693V26.726L38.287,40.884z M26.946,23.964l-8.839-4.419c-0.16-0.08-0.312-0.118-0.449-0.118c-0.387,0-0.659,0.299-0.659,0.802v19.083c0,0.511,0.374,1.116,0.831,1.344l7.785,3.892c0.2,0.1,0.39,0.147,0.561,0.147c0.484,0,0.823-0.374,0.823-1.003V24.051C27,24.014,26.979,23.98,26.946,23.964z"/></symbol><symbol id="medium-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M27,43.693c0,0.628-0.339,1.003-0.823,1.003c-0.172,0-0.362-0.047-0.561-0.147l-7.785-3.892C17.374,40.428,17,39.823,17,39.312V20.229c0-0.503,0.271-0.802,0.659-0.802c0.137,0,0.289,0.038,0.449,0.118l8.839,4.419C26.979,23.98,27,24.014,27,24.051V43.693z M28.433,35.958V26.32L37,40.241L28.433,35.958z M31.303,28.248l5.21-8.467c0.187-0.303,0.532-0.477,0.878-0.477c0.084,0,0.167,0.013,0.249,0.034c0.065,0.017,0.129,0.038,0.19,0.068l9.05,4.525l0.01,0.005c0.007,0.003,0.012,0.009,0.018,0.014c0.043,0.034,0.058,0.095,0.028,0.145l-9.095,14.779L31.303,28.248z M47,43.693c0,0.855-0.744,1.176-1.661,0.717l-7.052-3.526L47,26.726V43.693z"/></symbol><symbol id="twitter-unauth-icon" viewBox="0 0 64 64"><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"/></symbol><symbol id="twitter-unauth-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"/></symbol></svg>
+
+
+
+</body>
+
+</html>
